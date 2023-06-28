@@ -1,32 +1,29 @@
-import { render } from 'preact';
-import { useState } from 'preact/hooks';
-import preactLogo from './assets/preact.svg';
-import viteLogo from '/vite.svg';
-import './style.css';
+import { render } from "preact";
+import {
+  Box,
+  ChakraProvider,
+  Container,
+  Divider,
+  Grid,
+} from "@chakra-ui/react";
+import theme from "./theme";
+import "./index.css";
+import Header from "./Header";
+import Body from "./Body";
+import Footer from "./Footer";
 
 export function App() {
-	const [count, setCount] = useState(0);
-
-	return (
-		<>
-			<div>
-				<a href="https://vitejs.dev" target="_blank">
-					<img src={viteLogo} class="logo" alt="Vite logo" />
-				</a>
-				<a href="https://preactjs.com" target="_blank">
-					<img src={preactLogo} class="logo preact" alt="Preact logo" />
-				</a>
-			</div>
-			<h1>Vite + Preact</h1>
-			<div class="card">
-				<button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-				<p>
-					Edit <code>src/app.jsx</code> and save to test HMR
-				</p>
-			</div>
-			<p class="read-the-docs">Click on the Vite and Preact logos to learn more</p>
-		</>
-	);
+  return (
+    <ChakraProvider theme={theme}>
+      <Container maxW="container.lg">
+        <Box minH="calc(100vh - 60px)">
+          <Header />
+          <Body />
+        </Box>
+        <Footer />
+      </Container>
+    </ChakraProvider>
+  );
 }
 
-render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById("app"));
