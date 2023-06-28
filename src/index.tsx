@@ -1,7 +1,6 @@
 import { render } from "preact";
 import { Box, ChakraProvider, Container } from "@chakra-ui/react";
 import theme from "./theme";
-import "./index.css";
 import Body from "./Body";
 import Footer from "./Footer";
 
