@@ -4,6 +4,7 @@ import { useEffect, useState } from "preact/hooks";
 
 type Props = {
   isHovered: boolean;
+  color: string;
 };
 
 export default function WCBackground(props: Props) {
@@ -16,7 +17,7 @@ export default function WCBackground(props: Props) {
   return (
     <Box
       pos="absolute"
-      bg="green.500"
+      bg={props.color + ".500"}
       height="160px"
       width="100%"
       top="0"

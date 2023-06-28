@@ -2,11 +2,12 @@ import { Icon, Box } from "@chakra-ui/react";
 import React from "preact";
 
 type Props = {
-  path: string;
+  icon: string;
+  color: string;
   isHovered: boolean;
 };
 
-export default function WCIcon(props: Props) {
+export default function WCIcon({ icon, isHovered, color }: Props) {
   return (
     <Box
       pos="absolute"
@@ -20,14 +21,14 @@ export default function WCIcon(props: Props) {
       zIndex={0}
     >
       <Icon
-        fill={props.isHovered ? "green.900" : "green.600"}
-        transition="fill 500ms"
-        opacity={0.1}
+        fill={isHovered ? color + ".900" : color + ".500"}
+        transition="all 500ms"
+        opacity={isHovered ? 0.33 : 0.2}
         viewBox="0 0 24 24"
         width="150px"
         height="150px"
       >
-        <path d={props.path} />
+        <path d={icon} />
       </Icon>
     </Box>
   );
