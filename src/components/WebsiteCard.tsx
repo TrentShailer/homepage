@@ -15,12 +15,8 @@ export default function WebsiteCard({ site, ...props }: Props) {
 
   return (
     <div
-      onMouseEnter={() => {
-        setIsHovered(true);
-      }}
-      onMouseLeave={() => {
-        setIsHovered(false);
-      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <Box maxW="300px" pos="relative" as="a" href={site.url}>
         <Card

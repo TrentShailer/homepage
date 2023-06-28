@@ -3309,6 +3309,7 @@ __metadata:
   resolution: "example@workspace:."
   dependencies:
     "@babel/core": ^7.22.5
+    "@babel/plugin-transform-react-jsx": ^7.22.5
     "@babel/plugin-transform-react-jsx-development": ^7.22.5
     "@chakra-ui/react": ^2.7.1
     "@chakra-ui/styled-system": ^2.9.1
