@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Trent Shailer — Homepage</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<div id="app"></div>
-		<script type="module" src="/src/index.tsx"></script>
-	</body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage — Trent Shailer</title>
+</head>
+
+<body>
+    <div id="app">
+        <div id="content">
+            <a href="https://uni.trentshailer.com" class="card">
+                <div class="card-bg"></div>
+                <div class="card-icon">
+                    <ion-icon name="school"></ion-icon>
+                </div>
+                <h2>Assignment Tracker</h2>
+            </a>
+            <a href="https://timetable.trentshailer.com" class="card">
+                <div class="card-bg"></div>
+                <div class="card-icon">
+                    <ion-icon name="calendar"></ion-icon>
+                </div>
+                <h2>Timetable</h2>
+            </a>
+            <a href="https://cli.trentshailer.com" class="card">
+                <div class="card-bg"></div>
+                <div class="card-icon">
+                    <ion-icon name="terminal"></ion-icon>
+                </div>
+                <h2>Web CLI</h2>
+            </a>
+            <a href="https://wheel.trentshailer.com" class="card">
+                <div class="card-bg"></div>
+                <div class="card-icon">
+                    <ion-icon name="dice-outline"></ion-icon>
+                </div>
+                <h2>Wheel Decider</h2>
+            </a>
+        </div>
+        <div class="spacer"></div>
+        <div id="footer">
+            <p>Made by Trent Shailer</p>
+            <div>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/trent-shailer-9916211bb"
+                    aria-label="Visit Trent's Linkedin" class="icon-button">
+                    <ion-icon name="logo-linkedin" /></ion-icon>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/TrentShailer"
+                    aria-label="Visit Trent's Github" class="icon-button">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
