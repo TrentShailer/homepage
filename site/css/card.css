@@ -5,7 +5,7 @@
     overflow: hidden;
     transition: transform 250ms;
     border-radius: 4px;
-    background: #2d3748;
+    background: #292c3c;
     z-index: 1;
 }
 
@@ -41,7 +41,14 @@
     transition: all 500ms;
 }
 
+.icon {
+    height: 100%;
+    color: currentColor;
+    fill: currentColor;
+}
+
 .card h2 {
     user-select: none;
     text-align: center;
+    transition: color 500ms;
 }
