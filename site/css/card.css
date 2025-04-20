@@ -49,6 +49,7 @@
 
 .card h2 {
     user-select: none;
+    -webkit-user-select: none;
     text-align: center;
     transition: color 500ms;
 }
