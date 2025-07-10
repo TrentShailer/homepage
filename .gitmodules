@@ -1,0 +1,3 @@
+[submodule "site/common-frontend"]
+	path = site/common-frontend
+	url = git@github.com:TrentShailer/common-frontend.git
