@@ -38,7 +38,7 @@
   color: var(--mantle);
 }
 
-.card > div {
+.card > #selector {
   position: absolute;
   height: 160px;
   width: 100%;
@@ -48,11 +48,11 @@
   z-index: -2;
 }
 
-.card:hover > div {
+.card:hover > #selector {
   left: 0%;
 }
 
-.card > svg {
+.card svg {
   position: absolute;
   left: 0;
   right: 0;
@@ -65,7 +65,7 @@
   transition: fill 500ms, stroke 500ms;
 }
 
-.card:hover > svg {
+.card:hover svg {
   fill: #000;
   stroke: #000;
 }

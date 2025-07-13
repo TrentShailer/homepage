@@ -8,9 +8,6 @@
       "dom",
       "dom.iterable"
     ],
-    "types": [
-      "frontend/types.d.ts"
-    ],
     "checkJs": true
   }
 }
